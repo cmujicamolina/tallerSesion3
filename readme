@@ -1,0 +1,28 @@
+1)  Open ZAP
+2) Configurar el host/puerto
+   tools> opcions
+     network > proxies local
+          localhost:9090 <--------- ***importante
+
+3) Abrir un navegador con la configuracion del proxy (paso 2) -------------------------> Vamos a usar SELENIUM
+   - click manual explore (inicia un browser ya configurado)
+4)  realizar algun flujo de negocio en la app bajo testeo     -------------------------> Vamos a usar SELENIUM
+      - regression /sanity/ smoke / e2e / .....
+    ejemplo: https://todo.ly/
+5)  verificar que el host de prueba (todo.ly) este listado en la seccion de sitios ---------------------> CLIENT API
+6) iniciar el escaneo
+    - click derecho sobre el host > atacar > iniciar escaneo ---------------------> CLIENT API
+7) * progress  del avance - el listado de vulnerabilidad     ---------------------> CLIENT API
+8) Reporte 						     ---------------------> CLIENT API
+     menu >  informe > generar informe
+     - seleccionar una carpeta (para saber donde se genera el reporte)
+     - seleccionar un template del report
+     - click [generar informe]
+
+
+    * modern html
+    * traditional (auto**)
+
+9) nota: generar el reporte una vez que el escaneo este al  100% ---------------------> CLIENT API
+
+10) reporte general ------->  ALLURE
